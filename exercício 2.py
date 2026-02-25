@@ -1,4 +1,4 @@
-'''
+
 #Usando o match case
 dia_da_semana = int(input("Digite um número: "))
 
@@ -22,7 +22,7 @@ match dia_da_semana:
         print("Dia inválido")
 '''      
 
-#Usando o elif
+#Usando o if,elif e else
 dia_da_semana = int(input("Digite um número: "))
 
 if dia_da_semana == 1:
@@ -41,3 +41,4 @@ elif dia_da_semana == 7:
     print("Domingo")
 else:
     print("Dia inválido")
+'''
