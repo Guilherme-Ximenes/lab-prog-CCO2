@@ -10,7 +10,7 @@ nome = input("Informe seu nome: ")
 total_pedido = 0.0
 while True:
     pedido = input(f"{nome.capitalize()}, deseja regitrar um novo item no pedido? (S/N) ")
-    if pedido.upper() == "S": #formatando igual
+    if pedido.upper() == "S" and pedido.isalpha(): #formatando igual
         item = float(input(f"\nInforme o valor do item (Digite 0 para cancelar): ")) #valor do item
         if item < 0:
             print("Valor inválido, tente novamente!")
@@ -30,7 +30,8 @@ while True:
                 print(f"Pedido de {nome} cancelado!")  #cancelamento do pedido
                 break  
     else:
-        break
+        print("Pedido inválido, tente novamente!")
+        continue
 
 print(f"Valor total do pedido de {nome}: {total_pedido:.2f}")
 
