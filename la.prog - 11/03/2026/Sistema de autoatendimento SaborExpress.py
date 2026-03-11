@@ -28,14 +28,12 @@ while True:
                 total_pedido += valor_do_item
             else:
                 print(f"Pedido de {nome} cancelado!")  #cancelamento do pedido
-                break  
+                break 
+
+    elif pedido.upper() == "N":
+        break  
     else:
         print("Pedido inválido, tente novamente!")
         continue
 
 print(f"Valor total do pedido de {nome}: {total_pedido:.2f}")
-
-
-
-
-
