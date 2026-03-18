@@ -43,6 +43,24 @@ for i in range(1, 10):
         mult = i * x
         print(f"{i} x {x} = {mult}")
 '''       
-#Passo no range(exercício para imprimir números pares)
-for i in range(0, 11, 2):
+#Passo no range
+'''
+for i in range(3, 31, 3):
     print(i)
+    
+else:
+    print("Impressão dos números concluída com sucesso!")
+'''    
+#Laços aninhados
+'''
+cores = ['Preta', 'Branca']
+tamanho_camisas = ['P', 'M', 'G', 'GG', 'XG']
+
+for cor in cores:
+    for tamanho in tamanho_camisas:
+        print(f"Cor: {cor}\nTamanho: {tamanho}\n")
+'''
+#Comando PASS
+for x in range(9):
+    pass
+    
