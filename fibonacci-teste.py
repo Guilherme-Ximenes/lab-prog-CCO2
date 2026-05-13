@@ -15,4 +15,4 @@ def fibonacci(n):
     return sequence
 
 print(fibonacci(10))
-print("Será que deu certo?")
+print("Deu tudo certo!")
